@@ -1,0 +1,522 @@
+Css
+body {
+  font-family: 'times new roman, Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+.user-dashboard {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.user-dashboard h1 {
+  color: #007bff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.logout-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-section {
+  background-color: #e6f7ff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section h2,
+.book-list-section h2,
+.reservation-section h2,
+.request-form-section h2 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #0056b3;
+}
+
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group input[type='password'],
+.form-group select,
+.form-group textarea,
+.form-group input[type='file'] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.update-profile-button,
+.submit-request-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update-profile-button:hover,
+.submit-request-button:hover {
+  background-color: #218838;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type='text'] {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+.reservation-section p {
+  color: #6c757d;
+}
+
+.notification-bell {
+  position: relative;
+}
+
+.notification-bell button {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.notification-bell button:hover {
+  background-color: #138496;
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  overflow-y: auto;
+  width: 300px;
+}
+
+.notification-item {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+  word-wrap: break-word;
+  color: #333;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #add8e6;
+  position: relative;
+  z-index: 5;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 120px;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar button {
+  background-color: #005580;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover,
+.sidebar button.active {
+  background-color: #0077a0;
+}
+
+.content {
+  margin-left: 220px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+  color: #003366;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.content label {
+  display: block;
+  margin-bottom: 8px;
+  color: #0056b3;
+  padding: 8px;
+}
+
+.content input[type='text'],
+.content input[type='email'],
+.content input[type='password'],
+.content select,
+.content textarea,
+.content input[type='file'] {
+  width: calc(100% - 22px);
+  padding: 12px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.content button {
+  background-color: #0056b3;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.content button:hover {
+  background-color: #f43610;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.edit,
+.delete {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit {
+  background-color: #007bff;
+  color: white;
+}
+
+.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.edit:hover,
+.delete:hover {
+  filter: brightness(90%);
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f8ff;
+}
+
+.login-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-logo img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.login-page form {
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-page .form-group {
+  margin-bottom: 15px;
+}
+
+.login-page label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-page input[type='text'],
+.login-page input[type='password'],
+.login-page select {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-page button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-page button:hover {
+  background-color: #0056b3;
+}
+
+.login-page .error {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.notification-logout-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.logout-button {
+  margin-left: 10px;
+}
+
+.book-list-user {
+  padding: 20px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.book-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.book-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.book-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.book-actions button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.book-actions button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.book-actions button:last-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.book-actions button:hover {
+  filter: brightness(90%);
+}
+
+.reservation-list {
+  padding: 20px;
+}
+
+.reservation-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reservation-list li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reservation-list li:last-child {
+  border-bottom: none;
+}
+
+.reservation-list button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reservation-list button:hover {
+  filter: brightness(90%);
+}
+
+.book-request-form {
+  padding: 20px;
+}
+
+.book-request-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-request-form label {
+  margin-bottom: 5px;
+}
+
+.book-request-form input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content li:last-child {
+  border-bottom: none;
+}
+
+.content li button {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.content li button:hover {
+  background-color: #c82333;
+}
+
